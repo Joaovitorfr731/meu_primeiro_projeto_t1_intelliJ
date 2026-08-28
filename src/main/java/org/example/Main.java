@@ -4,17 +4,14 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static void main() {
-        boolean cond1 = true;
-        boolean cond2 = false;
-        boolean cond3 = true;
+        double nota1 = 8.0;
+        double nota2 = 7.5;
+        double nota3 = 9.0;
 
-        System.out.println("\n2 - Operadores Lógicos Básicos");
+        double media = (nota1 + nota2 + nota3) / 3;
 
-        System.out.println("cond1 && cond2: " + (cond1 && cond2));
-        System.out.println("cond1 && cond3: " + (cond1 && cond3));
-
-        System.out.println("cond1 || cond2: " + (cond1 || cond2));
-        System.out.println("cond2 || cond3: " + (cond2 || cond3));
+        System.out.println("1 - Média Aritmética");
+        System.out.println("Média: " + media);
 
     }
 }
