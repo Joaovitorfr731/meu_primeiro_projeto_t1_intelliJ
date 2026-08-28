@@ -4,14 +4,14 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static void main() {
-        float valorFloat = 25.5f;
-        long valorLong = (long) valorFloat;
-        double valorDouble = valorLong;
+        short valorShort = 100;
+        int valorInt = valorShort;
+        byte valorByte = (byte) valorShort;
 
-        System.out.println("\n3. Conversão de Tipos:");
-        System.out.println("Valor float: " + valorFloat);
-        System.out.println("Valor long: " + valorLong);
-        System.out.println("Valor double: " + valorDouble);
+        System.out.println("\n4. Diferença entre Tipos de Dados:");
+        System.out.println("Valor short: " + valorShort);
+        System.out.println("Valor int: " + valorInt);
+        System.out.println("Valor byte: " + valorByte);
 
     }
 }
