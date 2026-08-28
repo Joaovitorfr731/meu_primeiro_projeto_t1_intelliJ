@@ -4,11 +4,12 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static void main() {
-        int Numeroint = 42;
-        double NumeroDouble = Numeroint;
+        int numeroInt = 10;
+        double numeroDouble = numeroInt;
 
-
-        System.out.println("valor em double: " + NumeroDouble);
+        System.out.println("1 - Casting Implícito");
+        System.out.println("Int: " + numeroInt);
+        System.out.println("Double: " + numeroDouble);
 
     }
 }
