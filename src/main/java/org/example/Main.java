@@ -4,17 +4,17 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static void main() {
-        int numero1 = 10;
-        int numero2 = 20;
+        boolean cond1 = true;
+        boolean cond2 = false;
+        boolean cond3 = true;
 
-        System.out.println("1 - Comparação de Dois Números");
+        System.out.println("\n2 - Operadores Lógicos Básicos");
 
-        System.out.println("numero1 > numero2: " + (numero1 > numero2));
-        System.out.println("numero1 < numero2: " + (numero1 < numero2));
-        System.out.println("numero1 >= numero2: " + (numero1 >= numero2));
-        System.out.println("numero1 <= numero2: " + (numero1 <= numero2));
-        System.out.println("numero1 == numero2: " + (numero1 == numero2));
-        System.out.println("numero1 != numero2: " + (numero1 != numero2));
+        System.out.println("cond1 && cond2: " + (cond1 && cond2));
+        System.out.println("cond1 && cond3: " + (cond1 && cond3));
+
+        System.out.println("cond1 || cond2: " + (cond1 || cond2));
+        System.out.println("cond2 || cond3: " + (cond2 || cond3));
 
     }
 }
