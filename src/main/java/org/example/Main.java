@@ -1,26 +1,15 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 import java.util.Scanner;
-public class Main
-{
-	public static void main(String[] argumentos) {
-	    Scanner leitor = new Scanner(System.in);
-	    double area;
 
-		System.out.println("Digite o Valor do Lado: ");
-		double lado = leitor.nextDouble();
-		
-		area= lado*lado;
+public class Main {
+    public static void main(String[] argumentos) {
+        Scanner leitor = new Scanner(System.in);
 
-		
-		
-		System.out.println("O valor da area eh: " + area);
-		
-	}
+        System.out.print("Digite a base do retângulo: ");
+        double base = leitor.nextDouble();
+        System.out.print("Digite a altura do retângulo: ");
+        double altura = leitor.nextDouble();
+
+        double perimetro = 2 * (base + altura);
+        System.out.println("O perímetro do retângulo é: " + perimetro);
+    }
 }
