@@ -1,17 +1,16 @@
-package org.example;
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double F;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    static void main() {
-        double nota1 = 8.0;
-        double nota2 = 7.5;
-        double nota3 = 9.0;
+        System.out.println("Digite a temperatura em C°: ");
+        double C = scanner.nextDouble();
 
-        double media = (nota1 + nota2 + nota3) / 3;
+        F = (C*(9/5))+32;
 
-        System.out.println("1 - Média Aritmética");
-        System.out.println("Média: " + media);
+        System.out.println("O valor da temperatura eh: " + F);
 
     }
 }
