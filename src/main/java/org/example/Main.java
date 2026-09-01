@@ -4,17 +4,14 @@ public class Main {
     public static void main(String[] argumentos) {
         Scanner leitor = new Scanner(System.in);
 
-        System.out.print("Digite o capital inicial: ");
-        double capital = leitor.nextDouble();
-        System.out.print("Digite a taxa de juros mensal: ");
-        double taxa = leitor.nextDouble();
-        System.out.print("Digite o tempo em meses: ");
-        double tempo = leitor.nextDouble();
+        System.out.print("Digite a quantidade total de segundos: ");
+        int totalSegundos = leitor.nextInt();
 
-        double juros = capital * (taxa / 100) * tempo;
-        double montante = capital + juros;
+        int horas = totalSegundos / 3600;
+        int restantes = totalSegundos % 3600;
+        int minutos = restantes / 60;
+        int segundos = restantes % 60;
 
-        System.out.println("Os juros são: " + juros);
-        System.out.println("O montante final é: " + montante);
+        System.out.println(horas + " horas, " + minutos + " minutos e " + segundos + " segundos");
     }
 }
