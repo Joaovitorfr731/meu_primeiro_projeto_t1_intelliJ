@@ -1,13 +1,21 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
 import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] argumentos) {
+	    Scanner leitor = new Scanner(System.in);
 
-public class Main {
-    public static void main(String[] argumentos) {
-        Scanner leitor = new Scanner(System.in);
-
-        System.out.print("Digite o valor do produto: ");
-        double valor = leitor.nextDouble();
-
-        double novoValor = valor * 0.85;
-        System.out.println("O novo valor do produto é: " + novoValor);
-    }
+		System.out.println("Digite o valor em real para ser convertido: ");
+		double valorEmReais = leitor.nextDouble();
+		valorEmReais=valorEmReais*5.49;
+		System.out.println("O valor em Dolar eh: " + valorEmReais);
+		
+	}
 }
