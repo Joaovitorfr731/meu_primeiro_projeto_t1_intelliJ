@@ -4,13 +4,15 @@ public class Main {
     public static void main(String[] argumentos) {
         Scanner leitor = new Scanner(System.in);
 
-        System.out.print("Digite o valor em metros: ");
-        double metros = leitor.nextDouble();
+        System.out.print("Digite o primeiro número inteiro: ");
+        int primeiro = leitor.nextInt();
+        System.out.print("Digite o segundo número inteiro: ");
+        int segundo = leitor.nextInt();
 
-        double centimetros = metros * 100;
-        double milimetros = metros * 1000;
+        int quociente = primeiro / segundo;
+        int resto = primeiro % segundo;
 
-        System.out.println("Em centímetros: " + centimetros);
-        System.out.println("Em milímetros: " + milimetros);
+        System.out.println("Quociente da divisão inteira: " + quociente);
+        System.out.println("Resto da divisão: " + resto);
     }
 }
